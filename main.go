@@ -2,6 +2,7 @@ package main
 
 import (
 	"aoc/day1"
+	"aoc/day2"
 	"aoc/file"
 	"fmt"
 	"os"
@@ -15,6 +16,7 @@ type day struct {
 
 var days = map[int]day{
 	1: {day1.Part1, day1.Part2},
+	2: {day2.Part1, nil},
 }
 
 func main() {
