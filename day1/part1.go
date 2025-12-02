@@ -6,7 +6,7 @@ import (
 
 const MAX = 100
 
-func Rotate(input []string) int {
+func Part1(input []string) int {
 	counter := 0
 	dial := 50
 

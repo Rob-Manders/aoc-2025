@@ -2,7 +2,7 @@ package day1
 
 import "testing"
 
-func Test_Rotate(t *testing.T) {
+func Test_Part1(t *testing.T) {
 	tests := []struct {
 		name  string
 		input []string
@@ -38,10 +38,10 @@ func Test_Rotate(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := Rotate(tt.input)
+			got := Part1(tt.input)
 
 			if got != tt.want {
-				t.Fatalf("Rotate() = %v, want %v", got, tt.want)
+				t.Fatalf("Part1() = %v, wantDial %v", got, tt.want)
 			}
 		})
 	}
@@ -73,7 +73,7 @@ func Test_RotateLeft(t *testing.T) {
 			got := rotateLeft(tt.amount, tt.dial)
 
 			if got != tt.want {
-				t.Fatalf("RotateLeft() = %v, want %v", got, tt.want)
+				t.Fatalf("RotateLeft() = %v, wantDial %v", got, tt.want)
 			}
 		})
 	}
@@ -105,7 +105,7 @@ func Test_RotateRight(t *testing.T) {
 			got := rotateRight(tt.amount, tt.dial)
 
 			if got != tt.want {
-				t.Fatalf("RotateRight() = %v, want %v", got, tt.want)
+				t.Fatalf("RotateRight() = %v, wantDial %v", got, tt.want)
 			}
 		})
 	}
