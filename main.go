@@ -16,7 +16,7 @@ type day struct {
 
 var days = map[int]day{
 	1: {day1.Part1, day1.Part2},
-	2: {day2.Part1, nil},
+	2: {day2.Part1, day2.Part2},
 }
 
 func main() {
